@@ -35,29 +35,29 @@ class _AuthenticationUIState extends State<AuthenticationUI> {
             child: SizedBox(
               child: Column(
                 children: [
-                  FadeInAnimation(
-                    delay: 1,
-                    child: Container(
-                      height: 60,
-                      width: 60,
-                      decoration: const BoxDecoration(
-                          shape: BoxShape.circle,
-                          image: DecorationImage(
-                              image: AssetImage(
-                                  "assets/images/main logo light color.png"))),
-                    ),
-                  ),
-                  const FadeInAnimation(
-                    delay: 1.5,
-                    child: Text(
-                      "Flutter Spirit ❤️",
-                      style: TextStyle(
-                          fontSize: 30,
-                          fontFamily: "Urbanist",
-                          fontWeight: FontWeight.bold,
-                          color: Colors.black),
-                    ),
-                  ),
+                  // FadeInAnimation(
+                  //   delay: 1,
+                  //   child: Container(
+                  //     height: 60,
+                  //     width: 60,
+                  //     decoration: const BoxDecoration(
+                  //         shape: BoxShape.circle,
+                  //         image: DecorationImage(
+                  //             image: AssetImage(
+                  //                 "assets/images/main logo light color.png"))),
+                  //   ),
+                  // ),
+                  // const FadeInAnimation(
+                  //   delay: 1.5,
+                  //   child: Text(
+                  //     "Flutter Spirit ❤️",
+                  //     style: TextStyle(
+                  //         fontSize: 30,
+                  //         fontFamily: "Urbanist",
+                  //         fontWeight: FontWeight.bold,
+                  //         color: Colors.black),
+                  //   ),
+                  // ),
                   const SizedBox(
                     height: 60,
                   ),
