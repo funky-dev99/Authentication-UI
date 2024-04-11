@@ -5,6 +5,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:go_router/go_router.dart';
 
 import '../common/common.dart';
+import '../router/router.dart';
 import '../widgets/custom_widget.dart';
 import 'fade_animationtest.dart';
 
@@ -124,7 +125,7 @@ class _SignupPageState extends State<SignupPage> {
                 Padding(
                   padding: const EdgeInsets.all(12.0),
                   child: SizedBox(
-                    height: 160,
+                    height: 140,
                     width: double.infinity,
                     child: Column(
                       children: [
@@ -170,13 +171,16 @@ class _SignupPageState extends State<SignupPage> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Text(
-                          "Don’t have an account?",
+                          "Already have an account?",
                           style: Common().hinttext,
                         ),
                         TextButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              GoRouter.of(context)
+                                  .pushNamed(Routers.loginpage.name);
+                            },
                             child: Text(
-                              "Register Now",
+                              "Login",
                               style: Common().mediumTheme,
                             )),
                       ],

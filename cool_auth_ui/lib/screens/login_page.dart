@@ -28,7 +28,7 @@ class _LoginPageState extends State<LoginPage> {
           child: SingleChildScrollView(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              // mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 FadeInAnimation(
                   delay: 1,
@@ -149,7 +149,7 @@ class _LoginPageState extends State<LoginPage> {
                 Padding(
                   padding: const EdgeInsets.all(12.0),
                   child: SizedBox(
-                    height: 300,
+                    height: 250,
                     width: double.infinity,
                     child: Column(
                       children: [
